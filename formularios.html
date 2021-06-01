@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOCORE | Formularios</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/hover/hover-min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote-bs4.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" />
+    <link href="css/bocore.css" rel="stylesheet" />
+    
+</head>
+    
+  </head>
+<body>
+    
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"><img src="images/logo.png" class="img-fluid" /></a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav px-3 col-md-3 col-lg-2 text-right">
+        <li>
+            <a href="#"><i class="fa fa-comment"></i></a>
+            <a href="#"><i class="fa fa-bell"></i></a>
+            <a href="#">Salir <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+        </li>
+    </ul>
+    </header>
+
+<div class="container-fluid dashboardContainer">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <span data-feather="home"></span>
+              Panel Principal
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="briefcase"></span>
+              Proyectos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="shield"></span>
+              Seguridad
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="users"></span>
+              Agregar Usuarios
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="user"></span>
+              Mi Cuenta
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="book-open"></span>
+              Base de Conocimientos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="archive"></span>
+              Recursos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="help-circle"></span>
+              Ayuda
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="log-out"></span>
+              Salir
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="breadcrumbs">
+            <a href="#">Home</a> - Dashboard
+        </div>
+        <div class="contentBox">
+            <div class="row">
+                <div class="col-sm">
+    
+                    <h3 class="titulo">Formulario Base</h3>
+    
+                    <form>
+                        <div class="form-group">
+                            <label for="text">Input Texto</label>
+                            <input type="text" class="form-control" id="texto" placeholder="Texto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Input Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="select1">Select</label>
+                            <select class="form-control" id="select1" required>
+                            <option>Opción 1</option>
+                            <option>Opción 2</option>
+                            <option>Opción 3</option>
+                            <option>Opción 4</option>
+                            <option>Opción 5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="textarea1">Textarea</label>
+                            <textarea class="form-control" id="textarea1" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-danger">Cancelar</button>
+                            <input type="submit" class="btn btn-success" value="Enviar" />
+                        </div>
+                    </form>
+    
+    
+                </div>
+                <div class="col-sm">
+                    <h3 class="titulo">Elementos Adicionales</h3>
+    
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Checkbox 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+    
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                            <label class="form-check-label" for="defaultCheck2">
+                              Checkbox 2 (Deshabilitado)
+                            </label>
+                        </div>
+                        <p></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                              Radio Default
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                              Radio opción
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                            <label class="form-check-label" for="exampleRadios3">
+                              Radio Deshabilitado
+                            </label>
+                        </div>
+                        <p></p>
+                        <div class="form-group">
+                            <label for="formControlRange">Rango</label>
+                            <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange1">
+                        </div>
+                        <p></p>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                            <label class="custom-file-label" for="validatedCustomFile">Seleccionar Archivo...</label>
+                        </div>
+                        <p></p>
+                        <div class="form-group">
+                            <label for="datetimepicker1">Datepicker - Fecha</label>
+                            <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" />
+                                <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="datetimepicker1">Datepicker - Hora</label>
+                            <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" />
+                                <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <p></p>
+            <div class="row">
+                <div class="col-sm">
+                    <h3 class="titulo">Formulario multiples columnas</h3>
+    
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputEmail4">Nombre Completo</label>
+                                <input type="text" class="form-control" id="inputText4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Clave</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Dirección</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Dirección 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">Ciudad</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">Estado</label>
+                                <select id="inputState" class="form-control">
+                              <option selected>Seleccionar...</option>
+                              <option>...</option>
+                            </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                              Mantener activa la sesión
+                            </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+  </div>
+</div>
+
+<div class="container-fluid footer">
+    <div class="row">
+        <div class="col-sm-12 copy text-center">
+            Universidad de Santander UDES - 2021
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="js/dashboard.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.6/js/dataTables.fixedHeader.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote-bs4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@9.5.4/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="js/tabledit/jquery.tabledit.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,772 @@
+/* ================================
+Tema: BOCORE
+Desarrollado por: Ing Nury Farelo
+Programa: Ing. Software UDES
+====================================*/
+
+h1, h2, h3, h4, h5 {
+    color: #F3782F;
+    padding: 2% 0 1%;
+}
+
+/* ==== Login ======*/
+.loginView header {
+    height: 60px;
+    background: #fff;
+    box-shadow: 0px 2px 3px #ccc;
+}
+
+    .loginView header img {
+        height: 50px;
+        width: auto;
+        margin-top: 5px;
+        margin-left: 2%;
+    }
+
+.dashboardContainer {
+    background: #FDE8E8;
+}
+
+.login {
+    background: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    margin: 5% auto;
+    padding: 2%;
+    color: #898989
+}
+
+    .login img {
+        height: 60px;
+        width: auto;
+    }
+
+    .login h4 {
+        margin-top: -1%;
+        color: #464b51 !important;
+    }
+
+    .login label {
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+
+    .login .form-check-label {
+        font-size: 14px;
+        line-height: 10px;
+    }
+
+    .login a {
+        text-align: right;
+        color: #898989;
+        text-decoration: none !important;
+        font-size: 14px;
+        float: right;
+        line-height: 28px;
+    }
+
+    .login .submitBtn {
+        margin-top: 5%;
+        text-align: center;
+        background: #f37022 !important;
+        border: 1px solid #f37022;
+    }
+
+.footer {
+    background: #fff;
+    padding: 1% 0;
+    color: #898989;
+    font-size: 12px;
+}
+
+/* ==== Navbar ====== */
+#sidebarMenu {
+    padding-left: 0 !important;
+}
+
+#sidebarMenu li {
+    width: 100%!important;
+}
+
+.navbar {
+    background-color: #fff !important;
+    box-shadow: 0px 2px 6px #ccc !important;
+}
+
+.nav-link {
+    padding: 0.5rem 1.1rem;
+    color: #707070 !important;
+    font-size: 0.85rem;
+}
+
+    .nav-link svg {
+        width: 1rem;
+        margin-right: 2%;
+        color: #707070 !important;
+    }
+
+    .nav-link.active, .nav-link:hover {
+        background: #F3F1FA !important;
+        border-left: 2px solid #F3782F !important;
+    }
+
+.contentBox {
+    background: #fff !important;
+    margin: 1%;
+    padding: 1% 2%;
+}
+
+.navbar-nav a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #ABAFB3 !important;
+}
+
+    .navbar-nav a:hover {
+        color: #F3782F !important;
+    }
+
+.breadcrumbs {
+    margin: 2% 2%;
+    text-align: right;
+    font-size: 0.8em;
+}
+/*---- Base Bootstrap -----*/
+
+.content.contrast {
+    background: #fefefe;
+}
+
+.height30 {
+    height: 30px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #F3782F !important;
+    border-color: #F3782F !important;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: Black !important;
+    border-color: Black !important;
+}
+
+.page-link {
+    color: #F3782F;
+}
+
+    .page-link:hover {
+        color: black;
+    }
+
+.page-item.active .page-link {
+    background-color: #F3782F;
+    border-color: #F3782F;
+}
+
+.progress-bar {
+    background-color: #F3782F;
+}
+
+.btn-link,
+a {
+    color: #F3782F;
+}
+
+.bootstrap-datetimepicker-widget table td.today:before {
+    border-bottom-color: #F3782F !important;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+    background-color: #F3782F !important;
+}
+
+.bootstrap-datetimepicker-widget table td span.active {
+    background-color: #F3782F !important;
+}
+
+.btn-link:hover {
+    color: black;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #fff !important;
+    background-color: #F3782F !important;
+    border-color: #F3782F;
+}
+
+.nav-tabs .nav-link {
+    color: #F3782F !important;
+}
+
+.tab-pane {
+    padding: 2% !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: #F3782F !important;
+    color: #fff !important;
+}
+
+.nav-pills .nav-link {
+    color: #F3782F !important;
+}
+
+.breadcrumb {
+    background: #f4f4f5 !important;
+}
+
+    .breadcrumb a {
+        color: #F3782F !important;
+    }
+
+.spinner-border {
+    color: #F3782F;
+}
+
+.spinner-grow {
+    color: black;
+}
+
+body,
+html {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    /* overflow-y: overlay; */
+    height: auto;
+}
+
+.titulo {
+    margin-top: 2%;
+}
+
+a:hover {
+    color: #464A53 !important;
+}
+/*----- Header -----*/
+
+.header {
+    height: 60px;
+    background: #F3782F;
+    color: #fff;
+}
+
+    .header a {
+        color: #fff;
+    }
+
+    .header .logo img {
+        height: 50px !important;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .header .homeBtn,
+    .header .notifBtn,
+    .header .mobileMenu {
+        color: #fff;
+        margin-top: 10px;
+        display: inline-block;
+        margin-right: 30px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .header .dropdownMenuUser {
+        /*display: none;*/
+    }
+
+    .header .dropdownMenuUser {
+        background: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0px 3px 3px #ccc;
+        position: absolute;
+        top: 90%;
+        right: 2%;
+        width: 150px;
+        padding: 0%;
+        text-align: left;
+        z-index: 100;
+    }
+
+        .header .dropdownMenuUser ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            .header .dropdownMenuUser ul li {
+                font-size: 13px;
+                line-height: 1.6em;
+                padding: 5% 0;
+            }
+
+                .header .dropdownMenuUser ul li a {
+                    color: #333;
+                    text-decoration: none;
+                    width: 100%;
+                    display: block;
+                    padding: 0 10%;
+                }
+
+                .header .dropdownMenuUser ul li:hover {
+                    background: #efefef;
+                }
+
+    .header .userMenu {
+        cursor: pointer;
+        line-height: 60px;
+    }
+
+    .header .dropdownMenuUser.collapse.show {
+        display: block !important;
+    }
+/*----- Menu Bar -----*/
+
+.menubar {
+    height: 40px;
+    box-shadow: 0px 1px 3px #ccc;
+    padding-left: 2%;
+    font-size: 14px;
+}
+
+    .menubar ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+        .menubar ul li {
+            display: inline-block;
+            line-height: 38px;
+            margin-right: 2%;
+        }
+
+            .menubar ul li a {
+                color: #686868;
+                font-weight: 500;
+                width: 100%;
+                height: 100%;
+            }
+
+                .menubar ul li a:hover {
+                    text-decoration: none;
+                    border-bottom: 2px solid #F3782F;
+                    padding-bottom: 5px;
+                }
+
+            .menubar ul li ul {
+                display: none;
+                position: absolute;
+                background: #fff;
+                box-shadow: 0px 0px 4px #ccc;
+                width: auto;
+                min-width: 200px;
+                z-index: 100;
+            }
+
+                .menubar ul li ul li {
+                    display: block;
+                    padding: 0 7%;
+                    border-bottom: 2px solid #fff;
+                    margin: 0;
+                }
+
+            .menubar ul li:hover ul {
+                display: block;
+            }
+
+            .menubar ul li ul li:hover {
+                background: #F3782F21;
+                border-bottom: 2px solid #F3782F;
+            }
+
+            .menubar ul li ul li a {
+                width: 100%;
+                display: block;
+            }
+
+                .menubar ul li ul li a:hover {
+                    border: none !important;
+                    padding: 0;
+                }
+/*----- Content -----*/
+
+.content {
+    height: 100%;
+    min-height: 700px !important;
+    padding: 1% 2% 3%;
+}
+/*----- Footer -----*/
+
+.footer {
+    height: auto;
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #898989;
+}
+
+
+    .footer .copy {
+        text-align: center;
+    }
+
+
+/*----- Datatables -----*/
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+        background-position: 0% 0%;
+    background-color: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    border-left-style: none !important;
+    border-left-color: inherit !important;
+    border-left-width: medium;
+    border-right-style: none !important;
+    border-right-color: inherit !important;
+    border-right-width: medium;
+    border-top-style: none !important;
+    border-top-color: inherit !important;
+    border-top-width: medium;
+    border-bottom-style: none !important;
+    border-bottom-color: inherit !important;
+    border-bottom-width: medium;
+    background-image: none !important;
+    background-repeat: repeat !important;
+    background-attachment: scroll !important;
+}
+
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:before,
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+    content: '' !important;
+}
+
+table.dataTable tbody tr.selected {
+    background-color: #F3782F3d !important;
+}
+
+    table.dataTable tbody tr.selected td:first-child {
+        border-left: 5px solid #F3782F;
+    }
+
+table#editable.dataTable tbody tr.selected {
+    background-color: transparent !important;
+}
+
+table.dataTable tbody tr.selected td {
+    /*mix-blend-mode: overlay;*/
+}
+
+table.dataTable a {
+    color: #000000 !important;
+    margin-right: 5%;
+}
+
+    table.dataTable a:hover {
+        color: #F3782F !important;
+    }
+
+.tabledit-save-button {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+/*---- Sweet Alert ----*/
+
+.swal2-styled.swal2-confirm {
+    background-color: #F3782F !important;
+    border: 1px solid #F3782F !important;
+}
+
+.notificacionError {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #441010;
+    background: rgb(245, 195, 195);
+    color: #441010;
+    padding: 5px 5px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-bottom: 2%;
+}
+
+.loginForm .notificacionError {
+    width: 100%;
+    margin-bottom: 0;
+}
+/*---- Error Page -----*/
+
+.errorPage,
+.page404 {
+    margin-top: 10%;
+    padding-bottom: 5%;
+}
+
+.etapas .etapa {
+    background: url('../images/etapa.png') no-repeat center center;
+    background-size: contain;
+    color: #fff;
+    height: 150px;
+    padding: 50px 10px 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+    .etapas .etapa.active {
+        background: url('../images/etapa-active.png') no-repeat center center;
+        background-size: contain;
+    }
+
+.participantes {
+    text-align: center;
+}
+
+    .participantes img {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+.documentos {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 0 0 4% 0;
+    padding: 4% 0 1% 0;
+}
+
+    .documentos p {
+        text-align: center;
+    }
+
+    .documentos img {
+        width: 80%;
+        text-align: center;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+.boxHeader {
+    background: #F3782F;
+    color: #fff;
+}
+
+.coordinador p {
+    margin-bottom: 0;
+}
+
+.servicios img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.servicio {
+    position: relative;
+}
+
+    .servicio .icono {
+        position: absolute;
+        right: 3%;
+        top: 1%;
+        width: 80px;
+    }
+
+.botonCC {
+    font-size: 2em;
+    margin-top: 5%;
+    text-align: center;
+}
+
+@media screen and (max-width:1100px) {
+
+    .header .homeBtn,
+    .header .notifBtn,
+    .header .mobileMenu {
+        margin-right: 9%;
+        width: auto;
+        display: inline-block !important;
+    }
+
+    .header .nameOpts {
+        display: none;
+    }
+
+    .header .headerUser {
+        text-align: left !important;
+    }
+
+    .header .dropdownMenuUser {
+        left: 3%;
+    }
+
+    .header .logo {
+        width: 55%;
+        height: 50px;
+        display: inline-block;
+    }
+
+        .header .logo img {
+            height: 100% !important;
+            width: auto !important;
+        }
+
+    .header .headerUser {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .menubar {
+        width: 100%;
+        height: auto;
+        background: #fff;
+        padding: 1% 5%;
+        position: relative;
+        margin-bottom: 3%;
+    }
+
+        .menubar li {
+            width: 100%;
+            border-bottom: 1px solid #F3782F08;
+        }
+
+        .menubar ul li ul {
+            width: 100%;
+            position: relative;
+            box-shadow: none;
+        }
+
+            .menubar ul li ul li {
+                border-bottom: 1px solid #F3782F08;
+            }
+
+
+    .errorPage,
+    .page404 {
+        margin-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .collapse.dont-collapse-sm {
+        display: none;
+        height: auto !important;
+        visibility: visible;
+    }
+
+        .collapse.dont-collapse-sm.show {
+            display: block;
+        }
+
+    .footer .redes .redesLogos a i {
+        font-size: 12px;
+        padding: 10px;
+        border-radius: 50%;
+        margin-right: 2%;
+        border: 1px solid;
+    }
+
+    .menubar ul li a {
+        width: 100%;
+        display: block;
+    }
+
+    .titulo {
+        margin-top: 5%;
+    }
+
+    .btn {
+        margin: 2% auto;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .footer {
+        height: 100%;
+        text-align: center;
+    }
+
+        .footer .logo img {
+            width: 60%;
+            margin: 0 auto;
+            padding: 0 !important;
+        }
+
+        .footer .logo,
+        .footer .info,
+        .footer .redes,
+        .footer .copy {
+            margin: 5% auto;
+            text-align: center;
+        }
+
+        #sidebarMenu {
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            top: 0px;
+            position: absolute;
+            z-index: 100;
+        }
+
+        #navbarTogglerDemo01 {
+            width: 100%;
+            margin-top: 5%;
+        }
+
+        #navbarTogglerDemo01 li {
+            width: 100%;
+            margin: 0;
+        }
+}
+
+/* ==================================
+Estilos agregados por Jorge Lievano
+====================================*/
+/*Np permite que un texto section desborde por fuera defs un DIV*/
+.word-wrap-break-word {
+    word-wrap: break-word;
+}
+
+/* Equal Height nested divs in bootstrap */
+.full-height {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.full-height-item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* Remueve el borde del botón hamburgues*/
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
